@@ -48,16 +48,21 @@
       color: white;
     }
 
+    /* HERO SECTION */
+
     .hero {
       min-height: 520px;
-      padding: 100px 10%;
+      padding: 80px 10%;
       background: #16213b;
       color: white;
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      gap: 70px;
     }
 
     .hero-content {
+      flex: 1;
       max-width: 780px;
     }
 
@@ -84,6 +89,25 @@
       color: #d6dfef;
       margin-bottom: 28px;
       font-size: 17px;
+    }
+
+    /* PROFILE PHOTO */
+
+    .hero-image {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-image img {
+      width: 310px;
+      height: 310px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 50%;
+      border: 5px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.28);
     }
 
     .btn {
@@ -225,7 +249,34 @@
       font-size: 14px;
     }
 
+    /* MOBILE RESPONSIVE */
+
+    @media (max-width: 900px) {
+
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 70px 7%;
+        gap: 35px;
+      }
+
+      .hero-content {
+        max-width: 100%;
+      }
+
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-image img {
+        width: 230px;
+        height: 230px;
+      }
+    }
+
     @media (max-width: 750px) {
+
       nav {
         display: block;
       }
@@ -242,12 +293,21 @@
         font-size: 39px;
       }
 
+      .hero h2 {
+        font-size: 23px;
+      }
+
       section {
         padding: 55px 7%;
       }
 
       .hero {
-        padding: 80px 7%;
+        padding: 60px 7%;
+      }
+
+      .hero-image img {
+        width: 200px;
+        height: 200px;
       }
     }
   </style>
@@ -270,6 +330,7 @@
 
 
 <header class="hero">
+
   <div class="hero-content">
 
     <p class="intro">Hello, I'm</p>
@@ -290,6 +351,11 @@
     <a class="btn btn-outline" href="#">GitHub</a>
 
   </div>
+
+  <div class="hero-image">
+    <img src="pavan-kumar-profile.jpg" alt="Pavan Kumar N">
+  </div>
+
 </header>
 
 
@@ -372,7 +438,6 @@
         Python (Pandas) | SQL | Power BI | Excel
       </div>
 
-      <!-- We will add the exact repository link -->
       <a class="project-link" href="#">View Project</a>
       <a class="project-link" href="#">GitHub</a>
 
@@ -394,7 +459,6 @@
         Python (Pandas) | SQL | Power BI | Excel
       </div>
 
-      <!-- We will add the exact repository link -->
       <a class="project-link" href="#">View Project</a>
       <a class="project-link" href="#">GitHub</a>
 
@@ -486,7 +550,6 @@
     and would be happy to connect with recruiters and professionals.
   </p>
 
-  <!-- We'll replace these with your actual links -->
   <a class="btn" href="#">LinkedIn</a>
   <a class="btn" href="#">GitHub</a>
 
