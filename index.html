@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pavan Kumar N | Data Analyst Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #0f172a;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav h2 {
+      font-size: 21px;
+    }
+
+    nav a {
+      color: #dbe4f0;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      min-height: 520px;
+      padding: 100px 10%;
+      background: #16213b;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 780px;
+    }
+
+    .hero .intro {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 {
+      font-size: 27px;
+      font-weight: normal;
+      color: #d6dfef;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: #d6dfef;
+      margin-bottom: 28px;
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 19px;
+      margin: 5px 8px 5px 0;
+      background: white;
+      color: #16213b;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 1px solid white;
+    }
+
+    section {
+      padding: 75px 10%;
+    }
+
+    section h2 {
+      font-size: 31px;
+      margin-bottom: 12px;
+      color: #101a30;
+    }
+
+    .section-intro {
+      color: #657086;
+      margin-bottom: 35px;
+      max-width: 750px;
+    }
+
+    .about {
+      max-width: 900px;
+      font-size: 17px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .skill {
+      background: white;
+      border: 1px solid #dde3ec;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border: 1px solid #e0e5ed;
+      border-radius: 10px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #596579;
+      margin-bottom: 18px;
+    }
+
+    .tools {
+      font-size: 14px;
+      font-weight: bold;
+      color: #24324c;
+      margin-bottom: 18px;
+    }
+
+    .project-link {
+      text-decoration: none;
+      color: #174ea6;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+
+    .timeline-item {
+      background: white;
+      border-left: 4px solid #16213b;
+      padding: 22px;
+      margin-bottom: 20px;
+      max-width: 900px;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 4px;
+    }
+
+    .timeline-item .date {
+      color: #69758a;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .certification {
+      background: white;
+      border: 1px solid #e0e5ed;
+      padding: 25px;
+      border-radius: 8px;
+      max-width: 700px;
+    }
+
+    .contact {
+      background: #16213b;
+      color: white;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact p {
+      color: #d6dfef;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background: #0f172a;
+      color: #aeb8c8;
+      padding: 22px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 750px) {
+      nav {
+        display: block;
+      }
+
+      nav div {
+        margin-top: 10px;
+      }
+
+      nav a {
+        margin: 0 12px 0 0;
+      }
+
+      .hero h1 {
+        font-size: 39px;
+      }
+
+      section {
+        padding: 55px 7%;
+      }
+
+      .hero {
+        padding: 80px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <h2>Pavan Kumar N</h2>
+
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+<header class="hero">
+  <div class="hero-content">
+
+    <p class="intro">Hello, I'm</p>
+
+    <h1>Pavan Kumar N</h1>
+
+    <h2>Aspiring Data Analyst</h2>
+
+    <p>
+      I transform raw data into meaningful insights using
+      SQL, Python, Power BI and Excel.
+    </p>
+
+    <a class="btn" href="#projects">View My Projects</a>
+
+    <!-- We will add your actual LinkedIn and GitHub links next -->
+    <a class="btn btn-outline" href="#">LinkedIn</a>
+    <a class="btn btn-outline" href="#">GitHub</a>
+
+  </div>
+</header>
+
+
+<section id="about">
+
+  <h2>About Me</h2>
+
+  <p class="section-intro">
+    A quick introduction to my background and transition into Data Analytics.
+  </p>
+
+  <div class="about">
+    <p>
+      I am an aspiring Data Analyst with 3 years of professional experience
+      in operations, reporting, coordination and process management.
+      I have hands-on experience working with SQL, Python, Power BI and Excel
+      for data cleaning, analysis, visualization, data modeling and dashboard
+      development.
+    </p>
+
+    <br>
+
+    <p>
+      I enjoy working with data to identify patterns, uncover meaningful
+      business insights and build clear dashboards that support
+      data-driven decision-making.
+    </p>
+  </div>
+
+</section>
+
+
+<section id="skills">
+
+  <h2>Technical Skills</h2>
+
+  <p class="section-intro">
+    Technologies and analytical skills used across my projects.
+  </p>
+
+  <div class="skills">
+    <span class="skill">SQL</span>
+    <span class="skill">Python</span>
+    <span class="skill">Pandas</span>
+    <span class="skill">Power BI</span>
+    <span class="skill">DAX</span>
+    <span class="skill">Data Modeling</span>
+    <span class="skill">Excel</span>
+    <span class="skill">Data Cleaning</span>
+    <span class="skill">Data Analysis</span>
+    <span class="skill">Data Visualization</span>
+  </div>
+
+</section>
+
+
+<section id="projects">
+
+  <h2>Featured Projects</h2>
+
+  <p class="section-intro">
+    End-to-end analytics projects demonstrating practical data analysis
+    and business intelligence skills.
+  </p>
+
+  <div class="projects-grid">
+
+    <div class="card">
+
+      <h3>Amazon E-Commerce Sales Analysis</h3>
+
+      <p>
+        End-to-end analysis of e-commerce sales and inventory data.
+        Cleaned and transformed datasets using Python, performed SQL
+        analysis to identify sales and product trends, and developed
+        Power BI dashboards for sales performance and inventory analysis.
+      </p>
+
+      <div class="tools">
+        Python (Pandas) | SQL | Power BI | Excel
+      </div>
+
+      <!-- We will add the exact repository link -->
+      <a class="project-link" href="#">View Project</a>
+      <a class="project-link" href="#">GitHub</a>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Customer Shopping Behavior Analysis</h3>
+
+      <p>
+        Analyzed customer shopping behavior to understand purchasing
+        patterns, customer segments, subscriptions, discounts and
+        product preferences. Built an interactive Power BI dashboard
+        to communicate customer and purchasing insights.
+      </p>
+
+      <div class="tools">
+        Python (Pandas) | SQL | Power BI | Excel
+      </div>
+
+      <!-- We will add the exact repository link -->
+      <a class="project-link" href="#">View Project</a>
+      <a class="project-link" href="#">GitHub</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="experience">
+
+  <h2>Professional Experience</h2>
+
+  <p class="section-intro">
+    Professional experience that strengthened my operations,
+    reporting and coordination skills.
+  </p>
+
+  <div class="timeline-item">
+    <h3>Senior Helpdesk Executive — CBRE</h3>
+    <div class="date">July 2024 – January 2026</div>
+
+    <p>
+      Supported helpdesk operations, reporting, coordination and
+      day-to-day process management while working with internal teams
+      and stakeholders.
+    </p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>Helpdesk Executive</h3>
+    <div class="date">2023 – June 2024</div>
+
+    <p>
+      Managed helpdesk activities, administrative coordination,
+      service requests and operational support.
+    </p>
+  </div>
+
+</section>
+
+
+<section id="education">
+
+  <h2>Education</h2>
+
+  <div class="timeline-item">
+    <h3>MBA — Human Resources</h3>
+    <p>Master of Business Administration</p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>Bachelor of Commerce (B.Com)</h3>
+    <p>
+      Government First Grade College, Gauribidanur<br>
+      Bangalore North University
+    </p>
+  </div>
+
+</section>
+
+
+<section id="certifications">
+
+  <h2>Certification</h2>
+
+  <div class="certification">
+    <h3>Data Analytics Using Power BI</h3>
+
+    <p>
+      TechTip24 — April 2026
+    </p>
+
+    <p>
+      Data Analytics workshop using Power BI with an end-to-end project.
+    </p>
+  </div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+  <h2>Let's Connect</h2>
+
+  <p>
+    I am currently exploring opportunities in Data Analytics
+    and would be happy to connect with recruiters and professionals.
+  </p>
+
+  <!-- We'll replace these with your actual links -->
+  <a class="btn" href="#">LinkedIn</a>
+  <a class="btn" href="#">GitHub</a>
+
+</section>
+
+
+<footer>
+  © 2026 Pavan Kumar N | Data Analyst Portfolio
+</footer>
+
+</body>
+</html>
