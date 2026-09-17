@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Pavan Kumar N | Data Analyst Portfolio</title>
+
+  <meta name="description"
+        content="Pavan Kumar N - Data Analyst portfolio showcasing SQL, Python, Power BI, Excel, data analytics projects, dashboards and professional experience.">
 
   <style>
     * {
@@ -20,6 +24,8 @@
       color: #172033;
       line-height: 1.6;
     }
+
+    /* NAVIGATION */
 
     nav {
       background: #0f172a;
@@ -47,6 +53,8 @@
     nav a:hover {
       color: white;
     }
+
+    /* HERO */
 
     .hero {
       min-height: 520px;
@@ -102,9 +110,11 @@
       object-fit: cover;
       object-position: center top;
       border-radius: 50%;
-      border: 5px solid rgba(255,255,255,0.9);
-      box-shadow: 0 15px 40px rgba(0,0,0,0.28);
+      border: 5px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.28);
     }
+
+    /* BUTTONS */
 
     .btn {
       display: inline-block;
@@ -116,6 +126,7 @@
       border-radius: 6px;
       font-weight: bold;
       transition: 0.2s;
+      border: 1px solid white;
     }
 
     .btn:hover {
@@ -125,11 +136,13 @@
     .btn-outline {
       background: transparent;
       color: white;
-      border: 1px solid white;
     }
+
+    /* SECTIONS */
 
     section {
       padding: 75px 10%;
+      scroll-margin-top: 75px;
     }
 
     section h2 {
@@ -141,13 +154,17 @@
     .section-intro {
       color: #657086;
       margin-bottom: 35px;
-      max-width: 750px;
+      max-width: 800px;
     }
+
+    /* ABOUT */
 
     .about {
       max-width: 900px;
       font-size: 17px;
     }
+
+    /* SKILLS */
 
     .skills {
       display: flex;
@@ -164,6 +181,8 @@
       font-weight: bold;
     }
 
+    /* PROJECTS */
+
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -174,7 +193,7 @@
       background: white;
       border: 1px solid #e0e5ed;
       border-radius: 12px;
-      box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
       overflow: hidden;
     }
 
@@ -222,8 +241,34 @@
       text-decoration: underline;
     }
 
+    /* PROJECT INSIGHTS */
+
+    .project-insights {
+      margin-top: 22px;
+      padding: 18px;
+      background: #f7f9fc;
+      border-radius: 8px;
+      border: 1px solid #e0e5ed;
+    }
+
+    .project-insights h4 {
+      color: #24324c;
+      margin-bottom: 10px;
+    }
+
+    .project-insights ul {
+      padding-left: 20px;
+      color: #596579;
+    }
+
+    .project-insights li {
+      margin-bottom: 6px;
+    }
+
+    /* INVENTORY DASHBOARD */
+
     .inventory-preview {
-      margin-top: 20px;
+      margin-top: 22px;
     }
 
     .inventory-preview h4 {
@@ -237,6 +282,8 @@
       border-radius: 7px;
       display: block;
     }
+
+    /* EXPERIENCE / EDUCATION */
 
     .timeline-item {
       background: white;
@@ -255,6 +302,8 @@
       font-size: 14px;
       margin-bottom: 10px;
     }
+
+    /* CERTIFICATION */
 
     .certification {
       background: white;
@@ -281,6 +330,12 @@
       margin-top: 5px;
     }
 
+    .credential-link:hover {
+      text-decoration: underline;
+    }
+
+    /* CONTACT */
+
     .contact {
       background: #16213b;
       color: white;
@@ -296,6 +351,8 @@
       max-width: 750px;
     }
 
+    /* FOOTER */
+
     footer {
       text-align: center;
       background: #0f172a;
@@ -304,7 +361,17 @@
       font-size: 14px;
     }
 
+    /* ACCESSIBILITY */
+
+    a:focus-visible {
+      outline: 3px solid #8ab4f8;
+      outline-offset: 4px;
+    }
+
+    /* TABLET */
+
     @media (max-width: 900px) {
+
       .hero {
         flex-direction: column-reverse;
         text-align: center;
@@ -327,17 +394,32 @@
       }
     }
 
+    /* MOBILE */
+
     @media (max-width: 750px) {
+
       nav {
         display: block;
+        padding: 15px 7%;
+      }
+
+      nav h2 {
+        margin-bottom: 10px;
       }
 
       nav div {
-        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 14px;
       }
 
       nav a {
-        margin: 0 12px 0 0;
+        margin: 0;
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 60px 7%;
       }
 
       .hero h1 {
@@ -348,17 +430,13 @@
         font-size: 23px;
       }
 
-      section {
-        padding: 55px 7%;
-      }
-
-      .hero {
-        padding: 60px 7%;
-      }
-
       .hero-image img {
         width: 200px;
         height: 200px;
+      }
+
+      section {
+        padding: 55px 7%;
       }
 
       .projects-grid {
@@ -372,9 +450,13 @@
   </style>
 </head>
 
+
 <body>
 
+<!-- NAVIGATION -->
+
 <nav>
+
   <h2>Pavan Kumar N</h2>
 
   <div>
@@ -386,8 +468,11 @@
     <a href="#certifications">Certification</a>
     <a href="#contact">Contact</a>
   </div>
+
 </nav>
 
+
+<!-- HERO -->
 
 <header class="hero">
 
@@ -400,47 +485,57 @@
     <h2>Aspiring Data Analyst</h2>
 
     <p>
-      I transform raw data into meaningful insights using
+      I analyze and transform raw data into meaningful insights using
       SQL, Python, Power BI and Excel.
     </p>
 
-    <a class="btn" href="#projects">View My Projects</a>
+    <a class="btn" href="#projects">
+      View My Projects
+    </a>
 
     <a class="btn btn-outline"
        href="Pavan_Kumar_N_Data_Analyst_Resume.pdf"
-       target="_blank">
-       Resume
+       target="_blank"
+       rel="noopener noreferrer">
+      Resume
     </a>
 
     <a class="btn btn-outline"
        href="https://www.linkedin.com/in/pavan-kumar-n-3677b1238/"
        target="_blank"
        rel="noopener noreferrer">
-       LinkedIn
+      LinkedIn
     </a>
 
-   <a class="project-link"
-   href="https://github.com/pavankumarn136-pixel/fashion-retail-sales-inventory-analytics"
-   target="_blank"
-   rel="noopener noreferrer">
-   GitHub
-</a>
+    <a class="btn btn-outline"
+       href="https://github.com/pavankumarn136-pixel"
+       target="_blank"
+       rel="noopener noreferrer">
+      GitHub
+    </a>
 
   </div>
 
+
   <div class="hero-image">
-    <img src="pavan-kumar-profile.jpg" alt="Pavan Kumar N">
+
+    <img src="pavan-kumar-profile.jpg"
+         alt="Pavan Kumar N profile photo">
+
   </div>
 
 </header>
 
+
+<!-- ABOUT -->
 
 <section id="about">
 
   <h2>About Me</h2>
 
   <p class="section-intro">
-    A quick introduction to my background and transition into Data Analytics.
+    A quick introduction to my professional background and transition
+    into Data Analytics.
   </p>
 
   <div class="about">
@@ -466,18 +561,24 @@
 </section>
 
 
+<!-- SKILLS -->
+
 <section id="skills">
 
   <h2>Technical Skills</h2>
 
   <p class="section-intro">
-    Technologies and analytical skills used across my projects.
+    Technologies and analytical skills used across my Data Analytics projects.
   </p>
 
   <div class="skills">
+
     <span class="skill">SQL</span>
+    <span class="skill">MySQL</span>
     <span class="skill">Python</span>
     <span class="skill">Pandas</span>
+    <span class="skill">NumPy</span>
+    <span class="skill">Matplotlib</span>
     <span class="skill">Power BI</span>
     <span class="skill">DAX</span>
     <span class="skill">Data Modeling</span>
@@ -485,28 +586,35 @@
     <span class="skill">Data Cleaning</span>
     <span class="skill">Data Analysis</span>
     <span class="skill">Data Visualization</span>
+
   </div>
 
 </section>
 
+
+<!-- PROJECTS -->
 
 <section id="projects">
 
   <h2>Featured Projects</h2>
 
   <p class="section-intro">
-    End-to-end analytics projects demonstrating practical data analysis,
-    visualization and business intelligence skills.
+    End-to-end analytics projects demonstrating practical data cleaning,
+    SQL analysis, visualization and business intelligence skills.
   </p>
+
 
   <div class="projects-grid">
 
+
+    <!-- AMAZON PROJECT -->
+
     <div class="card">
 
-      <img
-        class="project-image"
-        src="Sales_Overview.png"
-        alt="Amazon E-Commerce Sales Overview Power BI Dashboard">
+      <img class="project-image"
+           src="Sales_Overview.png"
+           alt="Amazon E-Commerce Sales Overview Power BI Dashboard">
+
 
       <div class="card-content">
 
@@ -515,7 +623,7 @@
         <p>
           End-to-end analysis of e-commerce sales and inventory data.
           Cleaned and transformed raw datasets using Python (Pandas),
-          performed SQL analysis to evaluate sales performance, order
+          performed MySQL analysis to evaluate sales performance, order
           status, product categories, units sold and state-level trends,
           and developed interactive Power BI dashboards for sales and
           inventory analysis.
@@ -525,27 +633,36 @@
           Python (Pandas) | MySQL | Power BI | Excel
         </div>
 
-        <a class="project-link"
-           href="https://github.com/pavankumarn136-pixel/fashion-retail-sales-inventory-analytics"
-           target="_blank"
-           rel="noopener noreferrer">
-           View Full Project
-        </a>
 
         <a class="project-link"
            href="https://github.com/pavankumarn136-pixel/fashion-retail-sales-inventory-analytics"
            target="_blank"
            rel="noopener noreferrer">
-           GitHub
+          View Full Project
         </a>
+
+
+        <div class="project-insights">
+
+          <h4>Key Insights</h4>
+
+          <ul>
+            <li>Total revenue analyzed: ₹17.38M</li>
+            <li>Total units sold: 26,706</li>
+            <li>Total orders analyzed: 26,145</li>
+            <li>Set was the highest revenue-generating product category.</li>
+            <li>Maharashtra generated the highest state-level revenue.</li>
+          </ul>
+
+        </div>
+
 
         <div class="inventory-preview">
 
           <h4>Inventory Analysis Dashboard</h4>
 
-          <img
-            src="Inventory_Analysis.png"
-            alt="Amazon Inventory Analysis Power BI Dashboard">
+          <img src="Inventory_Analysis.png"
+               alt="Amazon Inventory Analysis Power BI Dashboard">
 
         </div>
 
@@ -554,12 +671,14 @@
     </div>
 
 
+    <!-- CUSTOMER PROJECT -->
+
     <div class="card">
 
-      <img
-        class="project-image"
-        src="Customer_Behavior_Dashboard.png"
-        alt="Customer Shopping Behavior Power BI Dashboard">
+      <img class="project-image"
+           src="Customer_Behavior_Dashboard.png"
+           alt="Customer Shopping Behavior Power BI Dashboard">
+
 
       <div class="card-content">
 
@@ -569,27 +688,36 @@
           Analyzed customer shopping behavior to understand purchasing
           patterns, customer segments, subscription behavior, discounts,
           product preferences and purchasing trends. Cleaned and transformed
-          the dataset and developed an interactive Power BI dashboard to
-          communicate customer and purchasing insights.
+          the dataset using Python and developed an interactive Power BI
+          dashboard to communicate customer and purchasing insights.
         </p>
 
         <div class="tools">
           Python (Pandas) | MySQL | Power BI | Excel
         </div>
 
-        <a class="project-link"
-           href="https://github.com/pavankumarn136-pixel/customer-shopping-behavior-analysis"
-           target="_blank"
-           rel="noopener noreferrer">
-           View Full Project
-        </a>
 
         <a class="project-link"
            href="https://github.com/pavankumarn136-pixel/customer-shopping-behavior-analysis"
            target="_blank"
            rel="noopener noreferrer">
-           GitHub
+          View Full Project
         </a>
+
+
+        <div class="project-insights">
+
+          <h4>Analysis Focus</h4>
+
+          <ul>
+            <li>Customer purchasing patterns</li>
+            <li>Subscription behavior</li>
+            <li>Product and category preferences</li>
+            <li>Discount and promotional behavior</li>
+            <li>Customer segmentation and purchasing trends</li>
+          </ul>
+
+        </div>
 
       </div>
 
@@ -599,6 +727,8 @@
 
 </section>
 
+
+<!-- EXPERIENCE -->
 
 <section id="experience">
 
@@ -609,11 +739,14 @@
     reporting, coordination and stakeholder management skills.
   </p>
 
+
   <div class="timeline-item">
 
     <h3>Senior Helpdesk Executive — CBRE</h3>
 
-    <div class="date">July 2024 – January 2026</div>
+    <div class="date">
+      July 2024 – January 2026
+    </div>
 
     <p>
       Managed helpdesk operations, service requests, operational reporting
@@ -629,7 +762,9 @@
 
     <h3>Helpdesk Executive — CBRE</h3>
 
-    <div class="date">March 2023 – June 2024</div>
+    <div class="date">
+      March 2023 – June 2024
+    </div>
 
     <p>
       Supported helpdesk operations, maintained service request information,
@@ -644,7 +779,9 @@
 
     <h3>Helpdesk Executive — Casa Grand</h3>
 
-    <div class="date">January 2023 – March 2023</div>
+    <div class="date">
+      January 2023 – March 2023
+    </div>
 
     <p>
       Supported day-to-day helpdesk and administrative operations,
@@ -657,9 +794,12 @@
 </section>
 
 
+<!-- EDUCATION -->
+
 <section id="education">
 
   <h2>Education</h2>
+
 
   <div class="timeline-item">
 
@@ -670,6 +810,7 @@
     </p>
 
   </div>
+
 
   <div class="timeline-item">
 
@@ -685,6 +826,8 @@
 </section>
 
 
+<!-- CERTIFICATION -->
+
 <section id="certifications">
 
   <h2>Certification</h2>
@@ -692,6 +835,7 @@
   <p class="section-intro">
     Additional learning and practical exposure in Data Analytics.
   </p>
+
 
   <div class="certification">
 
@@ -702,15 +846,16 @@
     </p>
 
     <p>
-      Data Analytics workshop focused on Power BI for beginners
-      with an end-to-end project.
+      Data Analytics workshop focused on Power BI with practical
+      exposure through an end-to-end project.
     </p>
+
 
     <a class="credential-link"
        href="https://verify.techtip24.com/profile?credId=69d28e51a0a1d70eaf5911e7"
        target="_blank"
        rel="noopener noreferrer">
-       Verify Credential
+      Verify Credential
     </a>
 
   </div>
@@ -718,37 +863,52 @@
 </section>
 
 
+<!-- CONTACT -->
+
 <section id="contact" class="contact">
 
   <h2>Let's Connect</h2>
 
   <p>
-    I am currently exploring opportunities in Data Analytics
-    and would be happy to connect with recruiters and professionals.
+    I am currently exploring Data Analyst, Business Analyst and Junior Analyst
+    opportunities in Bengaluru and remote roles. I would be happy to connect
+    with recruiters and professionals.
   </p>
+
+
+  <a class="btn"
+     href="mailto:Pavankumarn136@gmail.com">
+    Email Me
+  </a>
+
 
   <a class="btn"
      href="Pavan_Kumar_N_Data_Analyst_Resume.pdf"
-     target="_blank">
-     View Resume
+     target="_blank"
+     rel="noopener noreferrer">
+    View Resume
   </a>
+
 
   <a class="btn"
      href="https://www.linkedin.com/in/pavan-kumar-n-3677b1238/"
      target="_blank"
      rel="noopener noreferrer">
-     LinkedIn
+    LinkedIn
   </a>
+
 
   <a class="btn"
      href="https://github.com/pavankumarn136-pixel"
      target="_blank"
      rel="noopener noreferrer">
-     GitHub
+    GitHub
   </a>
 
 </section>
 
+
+<!-- FOOTER -->
 
 <footer>
   © 2026 Pavan Kumar N | Data Analyst Portfolio
