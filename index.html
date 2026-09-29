@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="description" content="Pavan Kumar N's Data Analyst portfolio showcasing professional experience, internship, SQL, Python, Power BI, Excel, and analytics projects.">
   <title>Pavan Kumar N | Data Analyst Portfolio</title>
 
   <style>
@@ -34,20 +34,16 @@
       z-index: 100;
     }
 
-    nav h2 {
-      font-size: 21px;
-    }
+    nav h2 { font-size: 21px; }
 
     nav a {
       color: #dbe4f0;
       text-decoration: none;
-      margin-left: 22px;
+      margin-left: 18px;
       font-size: 14px;
     }
 
-    nav a:hover {
-      color: white;
-    }
+    nav a:hover { color: white; }
 
     .hero {
       min-height: 520px;
@@ -57,38 +53,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 70px;
+      gap: 60px;
     }
 
-    .hero-content {
-      flex: 1;
-      max-width: 780px;
-    }
-
-    .hero .intro {
-      font-size: 18px;
-      margin-bottom: 8px;
-    }
-
-    .hero h1 {
-      font-size: 52px;
-      line-height: 1.1;
-      margin-bottom: 12px;
-    }
-
-    .hero h2 {
-      font-size: 27px;
-      font-weight: normal;
-      color: #d6dfef;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      max-width: 700px;
-      color: #d6dfef;
-      margin-bottom: 28px;
-      font-size: 17px;
-    }
+    .hero-content { flex: 1; max-width: 780px; }
+    .hero .intro { font-size: 18px; margin-bottom: 8px; }
+    .hero h1 { font-size: 52px; line-height: 1.1; margin-bottom: 12px; }
+    .hero h2 { font-size: 27px; font-weight: normal; color: #d6dfef; margin-bottom: 20px; }
+    .hero p { max-width: 700px; color: #d6dfef; margin-bottom: 28px; font-size: 17px; }
 
     .hero-image {
       flex-shrink: 0;
@@ -103,8 +75,8 @@
       object-fit: cover;
       object-position: center top;
       border-radius: 50%;
-      border: 5px solid rgba(255, 255, 255, 0.9);
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.28);
+      border: 5px solid rgba(255,255,255,.9);
+      box-shadow: 0 15px 40px rgba(0,0,0,.28);
     }
 
     .btn {
@@ -116,39 +88,23 @@
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
-      transition: 0.2s;
+      transition: .2s;
     }
 
-    .btn:hover {
-      transform: translateY(-2px);
-    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-outline { background: transparent; color: white; border: 1px solid white; }
 
-    .btn-outline {
-      background: transparent;
-      color: white;
-      border: 1px solid white;
-    }
-
-    section {
-      padding: 75px 10%;
-    }
-
-    section h2 {
-      font-size: 31px;
-      margin-bottom: 12px;
-      color: #101a30;
-    }
+    section { padding: 75px 10%; }
+    section h2 { font-size: 31px; margin-bottom: 12px; color: #101a30; }
 
     .section-intro {
       color: #657086;
       margin-bottom: 35px;
-      max-width: 750px;
+      max-width: 800px;
     }
 
-    .about {
-      max-width: 900px;
-      font-size: 17px;
-    }
+    .about { max-width: 950px; font-size: 17px; }
+    .about p { margin-bottom: 16px; }
 
     .skills {
       display: flex;
@@ -167,7 +123,7 @@
 
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 28px;
     }
 
@@ -175,7 +131,7 @@
       background: white;
       border: 1px solid #e0e5ed;
       border-radius: 12px;
-      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+      box-shadow: 0 5px 18px rgba(0,0,0,.06);
       overflow: hidden;
     }
 
@@ -188,20 +144,9 @@
       border-bottom: 1px solid #e0e5ed;
     }
 
-    .card-content {
-      padding: 28px;
-    }
-
-    .card h3 {
-      margin-bottom: 12px;
-      font-size: 22px;
-      color: #101a30;
-    }
-
-    .card p {
-      color: #596579;
-      margin-bottom: 18px;
-    }
+    .card-content { padding: 28px; }
+    .card h3 { margin-bottom: 12px; font-size: 22px; color: #101a30; }
+    .card p { color: #596579; margin-bottom: 18px; }
 
     .tools {
       font-size: 14px;
@@ -210,7 +155,7 @@
       margin-bottom: 18px;
     }
 
-    .project-link {
+    .project-link, .credential-link {
       display: inline-block;
       text-decoration: none;
       color: #174ea6;
@@ -219,18 +164,10 @@
       margin-top: 5px;
     }
 
-    .project-link:hover {
-      text-decoration: underline;
-    }
+    .project-link:hover, .credential-link:hover { text-decoration: underline; }
 
-    .inventory-preview {
-      margin-top: 20px;
-    }
-
-    .inventory-preview h4 {
-      margin-bottom: 10px;
-      color: #24324c;
-    }
+    .inventory-preview { margin-top: 20px; }
+    .inventory-preview h4 { margin-bottom: 10px; color: #24324c; }
 
     .inventory-preview img {
       width: 100%;
@@ -244,77 +181,29 @@
       border-left: 4px solid #16213b;
       padding: 22px;
       margin-bottom: 20px;
-      max-width: 950px;
+      max-width: 1000px;
     }
 
-    .timeline-item h3 {
-      margin-bottom: 4px;
-      color: #101a30;
-    }
-
-    .timeline-item .date {
-      color: #69758a;
-      font-size: 14px;
-      margin-bottom: 12px;
-    }
-
-    .timeline-item ul {
-      padding-left: 22px;
-      margin-top: 10px;
-    }
-
-    .timeline-item li {
-      margin-bottom: 9px;
-      color: #596579;
-    }
-
-    .timeline-item li:last-child {
-      margin-bottom: 0;
-    }
-
-    .timeline-item p {
-      color: #596579;
-    }
+    .timeline-item h3 { margin-bottom: 4px; color: #101a30; }
+    .timeline-item .date { color: #69758a; font-size: 14px; margin-bottom: 12px; }
+    .timeline-item ul { padding-left: 22px; margin-top: 10px; }
+    .timeline-item li { margin-bottom: 9px; color: #596579; }
+    .timeline-item p { color: #596579; }
 
     .certification {
       background: white;
       border: 1px solid #e0e5ed;
       padding: 25px;
       border-radius: 8px;
-      max-width: 700px;
-    }
-
-    .certification h3 {
-      margin-bottom: 7px;
-    }
-
-    .certification p {
-      margin-bottom: 12px;
-      color: #596579;
-    }
-
-    .credential-link {
-      display: inline-block;
-      text-decoration: none;
-      color: #174ea6;
-      font-weight: bold;
-      margin-top: 5px;
-    }
-
-    .contact {
-      background: #16213b;
-      color: white;
-    }
-
-    .contact h2 {
-      color: white;
-    }
-
-    .contact p {
-      color: #d6dfef;
-      margin-bottom: 20px;
       max-width: 750px;
     }
+
+    .certification h3 { margin-bottom: 7px; }
+    .certification p { margin-bottom: 12px; color: #596579; }
+
+    .contact { background: #16213b; color: white; }
+    .contact h2 { color: white; }
+    .contact p { color: #d6dfef; margin-bottom: 20px; max-width: 750px; }
 
     footer {
       text-align: center;
@@ -332,62 +221,22 @@
         gap: 35px;
       }
 
-      .hero-content {
-        max-width: 100%;
-      }
-
-      .hero p {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .hero-image img {
-        width: 230px;
-        height: 230px;
-      }
+      .hero-content { max-width: 100%; }
+      .hero p { margin-left: auto; margin-right: auto; }
+      .hero-image img { width: 230px; height: 230px; }
     }
 
     @media (max-width: 750px) {
-      nav {
-        display: block;
-      }
-
-      nav div {
-        margin-top: 10px;
-      }
-
-      nav a {
-        margin: 0 12px 0 0;
-      }
-
-      .hero h1 {
-        font-size: 39px;
-      }
-
-      .hero h2 {
-        font-size: 23px;
-      }
-
-      section {
-        padding: 55px 7%;
-      }
-
-      .hero {
-        padding: 60px 7%;
-      }
-
-      .hero-image img {
-        width: 200px;
-        height: 200px;
-      }
-
-      .projects-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .project-image {
-        height: auto;
-      }
+      nav { display: block; }
+      nav div { margin-top: 10px; }
+      nav a { display: inline-block; margin: 5px 12px 5px 0; }
+      .hero h1 { font-size: 39px; }
+      .hero h2 { font-size: 23px; }
+      section { padding: 55px 7%; }
+      .hero { padding: 60px 7%; }
+      .hero-image img { width: 200px; height: 200px; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .project-image { height: auto; }
     }
   </style>
 </head>
@@ -395,10 +244,8 @@
 <body>
 
   <!-- NAVIGATION -->
-
   <nav>
     <h2>Pavan Kumar N</h2>
-
     <div>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -410,103 +257,83 @@
     </div>
   </nav>
 
-
   <!-- HERO -->
-
   <header class="hero">
-
     <div class="hero-content">
-
       <p class="intro">Hello, I'm</p>
-
       <h1>Pavan Kumar N</h1>
-
-      <h2>Aspiring Data Analyst</h2>
-
+      <h2>Data Analyst | SQL • Python • Power BI • Excel</h2>
       <p>
-        I transform raw data into meaningful insights using
-        SQL, Python, Power BI and Excel.
+        Data analytics professional with 3+ years of experience in operations,
+        reporting, and coordination, complemented by Data Analytics training
+        and a completed 6-month Data Analyst internship. I transform data into
+        meaningful insights through analysis, reporting, and interactive dashboards.
       </p>
 
-      <a class="btn" href="#projects">
-        View My Projects
-      </a>
-
+      <a class="btn" href="#projects">View My Projects</a>
       <a class="btn btn-outline"
          href="Pavan_Kumar_N_Data_Analyst_Resume_Updated.pdf"
-         target="_blank"
-         rel="noopener noreferrer">
-        Resume
-      </a>
-
+         target="_blank" rel="noopener noreferrer">Resume</a>
       <a class="btn btn-outline"
          href="https://www.linkedin.com/in/pavan-kumar-n-3677b1238/"
-         target="_blank"
-         rel="noopener noreferrer">
-        LinkedIn
-      </a>
-
+         target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a class="btn btn-outline"
          href="https://github.com/pavankumarn136-pixel"
-         target="_blank"
-         rel="noopener noreferrer">
-        GitHub
-      </a>
-
+         target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
 
     <div class="hero-image">
-      <img
-        src="pavan-kumar-profile.jpg"
-        alt="Pavan Kumar N">
+      <img src="pavan-kumar-profile.jpg" alt="Pavan Kumar N">
     </div>
-
   </header>
 
-
   <!-- ABOUT -->
-
   <section id="about">
-
     <h2>About Me</h2>
-
     <p class="section-intro">
-      A quick introduction to my background and transition into Data Analytics.
+      A professional background combining operations experience with practical data analytics training and internship experience.
     </p>
 
     <div class="about">
-
       <p>
-        I am an aspiring Data Analyst with 3 years of professional experience
-        in operations, reporting, coordination and process management.
-        I have hands-on experience with SQL, Python, Power BI and Excel
-        for data cleaning, analysis, visualization, data modeling and
-        dashboard development.
+        I am <strong>Pavan Kumar N</strong>, a Data Analytics professional with
+        over 3 years of professional experience at CBRE, where I worked in
+        helpdesk operations, reporting, stakeholder coordination, and process
+        management. During my tenure, I progressed from Helpdesk Executive to
+        Senior Helpdesk Executive, taking on broader operational and team
+        coordination responsibilities.
       </p>
 
-      <br>
-
       <p>
-        My professional experience has also involved maintaining and analyzing
-        operational data, preparing reports and coordinating with multiple
-        stakeholders. I enjoy identifying patterns, uncovering meaningful
-        business insights and creating clear dashboards that support
-        data-driven decision-making.
+        To strengthen my technical capabilities and build on my experience with
+        Excel and operational reporting, I completed Data Analytics training at
+        Besant Technologies and developed practical skills in SQL, Python,
+        Power BI, and Advanced Excel. I also completed a 6-month Data Analyst
+        internship at <strong>B Dreams Global Solutions</strong>, applying
+        analytics tools and techniques to project-based work.
       </p>
 
+      <p>
+        My skills include data preparation, data analysis, SQL querying,
+        exploratory analysis, data visualization, KPI reporting, and dashboard
+        development. I enjoy translating business questions into structured
+        analysis and clear reporting that supports informed decision-making.
+      </p>
+
+      <p>
+        I am currently seeking opportunities as a
+        <strong>Data Analyst, Junior Data Analyst, BI Analyst, or MIS Analyst</strong>,
+        where I can combine my professional experience, analytical skills,
+        and technical knowledge to contribute to business reporting and insights.
+      </p>
     </div>
-
   </section>
 
-
   <!-- SKILLS -->
-
   <section id="skills">
-
     <h2>Technical Skills</h2>
-
     <p class="section-intro">
-      Technologies and analytical skills used across my projects.
+      Tools and analytical capabilities applied in my training, internship, and projects.
     </p>
 
     <div class="skills">
@@ -515,433 +342,337 @@
       <span class="skill">Python</span>
       <span class="skill">Pandas</span>
       <span class="skill">NumPy</span>
+      <span class="skill">Matplotlib</span>
+      <span class="skill">Seaborn</span>
       <span class="skill">Power BI</span>
       <span class="skill">DAX</span>
       <span class="skill">Power Query</span>
       <span class="skill">Data Modeling</span>
       <span class="skill">Excel</span>
+      <span class="skill">Advanced Excel</span>
       <span class="skill">Data Cleaning</span>
       <span class="skill">Data Analysis</span>
+      <span class="skill">Exploratory Data Analysis</span>
       <span class="skill">Data Visualization</span>
+      <span class="skill">KPI Reporting</span>
       <span class="skill">Dashboard Development</span>
+      <span class="skill">Business Analysis</span>
     </div>
-
   </section>
 
-
   <!-- PROJECTS -->
-
   <section id="projects">
-
     <h2>Featured Projects</h2>
-
     <p class="section-intro">
-      End-to-end analytics projects demonstrating practical data analysis,
-      visualization and business intelligence skills.
+      End-to-end analytics projects demonstrating data preparation, SQL analysis,
+      business intelligence, visualization, and reporting.
     </p>
 
     <div class="projects-grid">
 
-
       <!-- PROJECT 1 -->
-
       <div class="card">
-
-        <img
-          class="project-image"
-          src="Sales_Overview.png"
-          alt="Amazon E-Commerce Sales Overview Power BI Dashboard">
+        <img class="project-image"
+             src="Sales_Overview.png"
+             alt="Fashion Retail Sales Overview Power BI Dashboard">
 
         <div class="card-content">
-
-          <h3>Amazon E-Commerce Sales Analysis</h3>
-
+          <h3>Fashion Retail Sales & Inventory Analytics</h3>
           <p>
-            End-to-end analysis of e-commerce sales and inventory data.
-            Cleaned and transformed raw datasets using Python (Pandas),
-            performed SQL analysis to evaluate sales performance, order
-            status, product categories, units sold and state-level trends,
-            and developed interactive Power BI dashboards for sales and
-            inventory analysis.
+            An end-to-end retail analytics project using sales and inventory
+            datasets. Prepared and analyzed data with Python and SQL, explored
+            revenue, units sold, orders, product categories, customer segments,
+            sales channels, geographic trends, and inventory status, and
+            developed Power BI dashboards to present business metrics and insights.
           </p>
 
           <div class="tools">
-            Python (Pandas) | MySQL | Power BI | Excel
+            Python (Pandas, NumPy) | MySQL | SQL | Power BI | Excel
           </div>
 
           <a class="project-link"
-             href="https://github.com/pavankumarn136-pixel/fashion-retail-sales-inventory-analytics"
-             target="_blank"
-             rel="noopener noreferrer">
-            View Full Project
-          </a>
+             href="https://github.com/pavankumarn136-pixel/amazon-e-commerce-sales-inventory-analysis"
+             target="_blank" rel="noopener noreferrer">View Full Project</a>
 
           <a class="project-link"
-             href="https://github.com/pavankumarn136-pixel/fashion-retail-sales-inventory-analytics"
-             target="_blank"
-             rel="noopener noreferrer">
-            GitHub
-          </a>
+             href="https://github.com/pavankumarn136-pixel/amazon-e-commerce-sales-inventory-analysis"
+             target="_blank" rel="noopener noreferrer">GitHub</a>
 
           <div class="inventory-preview">
-
             <h4>Inventory Analysis Dashboard</h4>
-
-            <img
-              src="Inventory_Analysis.png"
-              alt="Amazon Inventory Analysis Power BI Dashboard">
-
+            <img src="Inventory_Analysis.png"
+                 alt="Retail Inventory Analysis Power BI Dashboard">
           </div>
-
         </div>
-
       </div>
 
-
       <!-- PROJECT 2 -->
-
       <div class="card">
-
-        <img
-          class="project-image"
-          src="Customer_Behavior_Dashboard.png"
-          alt="Customer Shopping Behavior Power BI Dashboard">
+        <img class="project-image"
+             src="Customer_Behavior_Dashboard.png"
+             alt="Customer Shopping Behavior Power BI Dashboard">
 
         <div class="card-content">
-
           <h3>Customer Shopping Behavior Analysis</h3>
-
           <p>
-            Analyzed customer shopping behavior to understand purchasing
-            patterns, customer segments, subscription behavior, discounts,
-            product preferences and purchasing trends. Cleaned and transformed
-            the dataset and developed an interactive Power BI dashboard to
-            communicate customer and purchasing insights.
+            Completed as part of my 6-month Data Analyst internship at
+            <strong>B Dreams Global Solutions</strong>. Analyzed 3,900 customer
+            records to explore purchasing patterns, customer demographics,
+            subscription behavior, discounts, product categories, shipping
+            preferences, and customer segments. Used SQL for business analysis
+            and developed an interactive Power BI dashboard with customer KPIs
+            and visual insights.
           </p>
 
           <div class="tools">
-            Python (Pandas) | MySQL | Power BI | Excel
+            Excel | MySQL | SQL | Power BI | Power Query | DAX
           </div>
 
           <a class="project-link"
              href="https://github.com/pavankumarn136-pixel/customer-shopping-behavior-analysis"
-             target="_blank"
-             rel="noopener noreferrer">
-            View Full Project
-          </a>
+             target="_blank" rel="noopener noreferrer">View Full Project</a>
 
           <a class="project-link"
              href="https://github.com/pavankumarn136-pixel/customer-shopping-behavior-analysis"
-             target="_blank"
-             rel="noopener noreferrer">
-            GitHub
-          </a>
-
+             target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- PROFESSIONAL EXPERIENCE -->
-
+  <!-- EXPERIENCE -->
   <section id="experience">
-
     <h2>Professional Experience</h2>
-
     <p class="section-intro">
-      Professional experience that strengthened my data reporting,
-      operations, team coordination and stakeholder management skills.
+      Experience across data analytics internship work, operations, reporting,
+      team coordination, and stakeholder communication.
     </p>
 
-
-    <!-- SENIOR HELPDESK EXECUTIVE -->
-
+    <!-- B DREAMS GLOBAL SOLUTIONS -->
     <div class="timeline-item">
-
-      <h3>Senior Helpdesk Executive — CBRE</h3>
-
-      <div class="date">
-        July 2024 – January 2026
-      </div>
+      <h3>Data Analyst Intern — B Dreams Global Solutions</h3>
+      <div class="date">6-Month Internship | Completed</div>
 
       <ul>
-
         <li>
-          <strong>
-            Promoted from Helpdesk Executive to Senior Helpdesk Executive
-            in July 2024
-          </strong>,
-          with increased responsibilities and ownership of helpdesk operations.
+          Completed a 6-month Data Analyst internship, gaining practical
+          project-based experience with data analytics tools and workflows.
         </li>
-
         <li>
-          Collected, maintained and analyzed occupancy and operational data
-          to track service activities and support reporting; prepared daily,
-          weekly and monthly reports, presentations, MOMs and management updates.
+          Worked with SQL, Python, Power BI, and Excel for data preparation,
+          analysis, visualization, and reporting activities.
         </li>
-
         <li>
-          Led and coordinated the helpdesk team, overseeing daily operations,
-          customer service, escalations and timely resolution of concerns while
-          maintaining positive relationships with residents, clients and
-          internal teams.
+          Completed the Customer Shopping Behavior Analysis project as part
+          of the internship, using customer shopping data to examine purchasing
+          patterns, product categories, customer segments, and subscription behavior.
         </li>
-
         <li>
-          Coordinated with stakeholders and relevant departments to ensure
-          smooth service delivery, effective communication, timely resolution
-          of operational concerns and closure of service tickets.
+          Applied SQL queries, aggregations, subqueries, CTEs, and conditional
+          logic to investigate business questions and customer behavior.
         </li>
-
         <li>
-          Managed professional email communication and correspondence with
-          residents, clients, stakeholders and internal teams, ensuring timely
-          follow-up on concerns and operational updates.
+          Developed Power BI KPIs and an interactive dashboard to present
+          customer metrics and analytical findings.
         </li>
-
         <li>
-          Managed move-in and move-out processes, related documentation,
-          payments and other administrative requirements.
+          Documented project workflow, analytical findings, and deliverables
+          for portfolio presentation.
         </li>
-
-        <li>
-          Managed fit-out documentation, records, stationery and helpdesk
-          documentation, and prepared and published notices for operational
-          updates and resident communication.
-        </li>
-
-        <li>
-          Successfully managed two complete helpdesk handovers, including
-          preparation of handover documents and coordination of the overall
-          transition.
-        </li>
-
-        <li>
-          Supported clubhouse management and approval processes and attended
-          general meetings as part of operational coordination.
-        </li>
-
       </ul>
-
     </div>
 
-
-    <!-- HELPDESK EXECUTIVE - CBRE -->
-
+    <!-- CBRE SENIOR HELPDESK EXECUTIVE -->
     <div class="timeline-item">
-
-      <h3>Helpdesk Executive — CBRE</h3>
-
-      <div class="date">
-        March 2023 – June 2024
-      </div>
+      <h3>Senior Helpdesk Executive — CBRE</h3>
+      <div class="date">July 2024 – January 2026</div>
 
       <ul>
+        <li>
+          Promoted from Helpdesk Executive to Senior Helpdesk Executive in
+          July 2024, with increased responsibilities for operations, reporting,
+          and team coordination.
+        </li>
+        <li>
+          Collected, maintained, validated, and analyzed occupancy and
+          operational data to support reporting and service tracking.
+        </li>
+        <li>
+          Prepared daily, weekly, and monthly MIS reports, presentations,
+          Minutes of Meeting (MOMs), and management updates using Excel,
+          Advanced Excel, and Power BI.
+        </li>
+        <li>
+          Coordinated helpdesk operations, service requests, escalations,
+          ticket tracking, and timely closure of customer concerns.
+        </li>
+        <li>
+          Communicated with residents, clients, stakeholders, and internal
+          teams to coordinate service delivery and operational follow-ups.
+        </li>
+        <li>
+          Supported move-in and move-out processes, payment records,
+          fit-out documentation, notices, and related administrative activities.
+        </li>
+        <li>
+          Managed two helpdesk handovers, including documentation and
+          coordination to support smooth operational transitions.
+        </li>
+        <li>
+          Supported clubhouse management, approval processes, and general
+          meeting coordination.
+        </li>
+      </ul>
+    </div>
 
+    <!-- CBRE HELPDESK EXECUTIVE -->
+    <div class="timeline-item">
+      <h3>Helpdesk Executive — CBRE</h3>
+      <div class="date">March 2023 – June 2024</div>
+
+      <ul>
         <li>
           Managed daily helpdesk operations, including customer queries,
-          service requests, concerns and professional email communication.
+          service requests, complaints, and email communication.
         </li>
-
         <li>
-          Prepared and maintained daily operational reports, tracked pending
-          requests and ensured timely follow-up and resolution.
+          Prepared and maintained operational reports, tracked pending
+          requests, and followed up on service resolution.
         </li>
-
         <li>
-          Maintained accurate resident records, service details, operational
-          data and feedback to support effective data management and service
-          quality.
+          Maintained resident records, service details, operational data,
+          and documentation to support accurate reporting.
         </li>
-
-        <li>
-          Coordinated with internal teams and relevant departments for smooth
-          service delivery and maintained HOTO for proper handover within the
-          helpdesk team.
-        </li>
-
-        <li>
-          Managed helpdesk documentation, record keeping, stationery and
-          routine administrative activities.
-        </li>
-
-      </ul>
-
-    </div>
-
-
-    <!-- CASA GRAND -->
-
-    <div class="timeline-item">
-
-      <h3>Helpdesk Executive — Casa Grand</h3>
-
-      <div class="date">
-        January 2023 – March 2023
-      </div>
-
-      <ul>
-
-        <li>
-          Started my professional career in an entry-level helpdesk role,
-          gaining hands-on experience and learning the fundamentals of
-          helpdesk operations.
-        </li>
-
-        <li>
-          Handled customer queries, service requests, complaints and email
-          communication with timely follow-up and coordination.
-        </li>
-
-        <li>
-          Maintained customer and service records and supported daily
-          operational reporting and documentation.
-        </li>
-
         <li>
           Coordinated with internal teams and relevant departments to support
-          smooth service delivery and routine administrative activities.
+          service delivery and timely resolution of concerns.
         </li>
-
+        <li>
+          Supported administrative activities, documentation, record keeping,
+          and helpdesk handovers.
+        </li>
       </ul>
-
     </div>
 
+    <!-- CASA GRAND -->
+    <div class="timeline-item">
+      <h3>Helpdesk Executive — Casa Grand</h3>
+      <div class="date">January 2023 – March 2023</div>
+
+      <ul>
+        <li>
+          Began my professional career in a helpdesk role, gaining experience
+          in customer service, operational support, and administrative processes.
+        </li>
+        <li>
+          Handled customer queries, service requests, complaints, and
+          professional email communication.
+        </li>
+        <li>
+          Maintained customer and service records and supported routine
+          operational reporting and documentation.
+        </li>
+        <li>
+          Coordinated with internal teams to support smooth service delivery
+          and timely follow-up.
+        </li>
+      </ul>
+    </div>
   </section>
 
-
   <!-- EDUCATION -->
-
   <section id="education">
-
-    <h2>Education</h2>
-
+    <h2>Education & Training</h2>
     <p class="section-intro">
-      Academic background supporting my business and analytical foundation.
+      Academic and professional learning supporting my business and analytical foundation.
     </p>
 
-
     <div class="timeline-item">
-
-      <h3>Master of Business Administration (MBA)</h3>
-
-      <div class="date">
-        2022 – 2024
-      </div>
-
+      <h3>Data Analytics Training — Besant Technologies</h3>
+      <div class="date">Completed</div>
       <p>
-        <strong>Human Resources</strong><br>
-        Bangalore University
+        Completed Data Analytics training with practical exposure to SQL,
+        Python, Power BI, Excel, data preparation, analysis, visualization,
+        and project-based learning.
       </p>
-
     </div>
 
+    <div class="timeline-item">
+      <h3>Master of Business Administration (MBA)</h3>
+      <div class="date">2022 – 2024</div>
+      <p>
+        <strong>Specialization:</strong> Human Resources<br>
+        Bangalore University
+      </p>
+    </div>
 
     <div class="timeline-item">
-
       <h3>Bachelor of Commerce (B.Com)</h3>
-
-      <div class="date">
-        2018 – 2021
-      </div>
-
+      <div class="date">2018 – 2021</div>
       <p>
         Government First Grade College, Gauribidanur<br>
         Bangalore North University
       </p>
-
     </div>
-
   </section>
 
-
   <!-- CERTIFICATION -->
-
   <section id="certifications">
-
     <h2>Certification</h2>
-
     <p class="section-intro">
-      Additional learning and practical exposure in Data Analytics.
+      Additional learning and practical exposure in Data Analytics and Power BI.
     </p>
 
     <div class="certification">
-
       <h3>Data Analytics Using Power BI</h3>
-
+      <p><strong>TechTip24</strong> — April 2026</p>
       <p>
-        <strong>TechTip24</strong> — April 2026
+        Data Analytics workshop focused on Power BI for beginners,
+        including an end-to-end project.
       </p>
-
-      <p>
-        Data Analytics workshop focused on Power BI for beginners
-        with an end-to-end project.
-      </p>
-
       <a class="credential-link"
          href="https://verify.techtip24.com/profile?credId=69d28e51a0a1d70eaf5911e7"
-         target="_blank"
-         rel="noopener noreferrer">
+         target="_blank" rel="noopener noreferrer">
         Verify Credential
       </a>
-
     </div>
-
   </section>
 
-
   <!-- CONTACT -->
-
   <section id="contact" class="contact">
-
     <h2>Let's Connect</h2>
-
     <p>
-      I am currently exploring opportunities in Data Analytics
-      and would be happy to connect with recruiters and professionals.
+      I am exploring opportunities in Data Analytics, Business Intelligence,
+      and MIS reporting. I welcome connections with recruiters, hiring
+      professionals, and fellow data enthusiasts.
     </p>
 
     <a class="btn"
-   href="https://mail.google.com/mail/?view=cm&fs=1&to=Pavankumarn136@gmail.com"
-   target="_blank"
-   rel="noopener noreferrer">
-  Email Me
-</a>
+       href="https://mail.google.com/mail/?view=cm&fs=1&to=Pavankumarn136@gmail.com"
+       target="_blank" rel="noopener noreferrer">Email Me</a>
 
     <a class="btn"
        href="Pavan_Kumar_N_Data_Analyst_Resume_Updated.pdf"
-       target="_blank"
-       rel="noopener noreferrer">
-      Resume
-    </a>
+       target="_blank" rel="noopener noreferrer">Resume</a>
 
     <a class="btn"
        href="https://www.linkedin.com/in/pavan-kumar-n-3677b1238/"
-       target="_blank"
-       rel="noopener noreferrer">
-      LinkedIn
-    </a>
+       target="_blank" rel="noopener noreferrer">LinkedIn</a>
 
     <a class="btn"
        href="https://github.com/pavankumarn136-pixel"
-       target="_blank"
-       rel="noopener noreferrer">
-      GitHub
-    </a>
+       target="_blank" rel="noopener noreferrer">GitHub</a>
 
+    <a class="btn"
+       href="https://pavankumarn136-pixel.github.io/"
+       target="_blank" rel="noopener noreferrer">Portfolio</a>
   </section>
 
-
   <!-- FOOTER -->
-
   <footer>
     © 2026 Pavan Kumar N | Data Analyst Portfolio
   </footer>
 
 </body>
-
 </html>
