@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pavan Kumar N's Data Analyst portfolio showcasing professional experience, internship, SQL, Python, Power BI, Excel, and analytics projects.">
+  <meta name="description" content="Pavan Kumar N - Data Analyst portfolio showcasing SQL, Python, Power BI, Excel, professional experience, internship, and analytics projects.">
   <title>Pavan Kumar N | Data Analyst Portfolio</title>
 
   <style>
@@ -34,7 +34,9 @@
       z-index: 100;
     }
 
-    nav h2 { font-size: 21px; }
+    nav h2 {
+      font-size: 21px;
+    }
 
     nav a {
       color: #dbe4f0;
@@ -43,7 +45,9 @@
       font-size: 14px;
     }
 
-    nav a:hover { color: white; }
+    nav a:hover {
+      color: white;
+    }
 
     .hero {
       min-height: 520px;
@@ -56,11 +60,35 @@
       gap: 60px;
     }
 
-    .hero-content { flex: 1; max-width: 780px; }
-    .hero .intro { font-size: 18px; margin-bottom: 8px; }
-    .hero h1 { font-size: 52px; line-height: 1.1; margin-bottom: 12px; }
-    .hero h2 { font-size: 27px; font-weight: normal; color: #d6dfef; margin-bottom: 20px; }
-    .hero p { max-width: 700px; color: #d6dfef; margin-bottom: 28px; font-size: 17px; }
+    .hero-content {
+      flex: 1;
+      max-width: 780px;
+    }
+
+    .hero .intro {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 {
+      font-size: 27px;
+      font-weight: normal;
+      color: #d6dfef;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: #d6dfef;
+      margin-bottom: 28px;
+      font-size: 17px;
+    }
 
     .hero-image {
       flex-shrink: 0;
@@ -75,8 +103,8 @@
       object-fit: cover;
       object-position: center top;
       border-radius: 50%;
-      border: 5px solid rgba(255,255,255,.9);
-      box-shadow: 0 15px 40px rgba(0,0,0,.28);
+      border: 5px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.28);
     }
 
     .btn {
@@ -88,14 +116,28 @@
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
-      transition: .2s;
+      transition: 0.2s;
     }
 
-    .btn:hover { transform: translateY(-2px); }
-    .btn-outline { background: transparent; color: white; border: 1px solid white; }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
 
-    section { padding: 75px 10%; }
-    section h2 { font-size: 31px; margin-bottom: 12px; color: #101a30; }
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 1px solid white;
+    }
+
+    section {
+      padding: 75px 10%;
+    }
+
+    section h2 {
+      font-size: 31px;
+      margin-bottom: 12px;
+      color: #101a30;
+    }
 
     .section-intro {
       color: #657086;
@@ -103,8 +145,14 @@
       max-width: 800px;
     }
 
-    .about { max-width: 950px; font-size: 17px; }
-    .about p { margin-bottom: 16px; }
+    .about {
+      max-width: 950px;
+      font-size: 17px;
+    }
+
+    .about p {
+      margin-bottom: 16px;
+    }
 
     .skills {
       display: flex;
@@ -131,7 +179,7 @@
       background: white;
       border: 1px solid #e0e5ed;
       border-radius: 12px;
-      box-shadow: 0 5px 18px rgba(0,0,0,.06);
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
       overflow: hidden;
     }
 
@@ -144,9 +192,20 @@
       border-bottom: 1px solid #e0e5ed;
     }
 
-    .card-content { padding: 28px; }
-    .card h3 { margin-bottom: 12px; font-size: 22px; color: #101a30; }
-    .card p { color: #596579; margin-bottom: 18px; }
+    .card-content {
+      padding: 28px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 22px;
+      color: #101a30;
+    }
+
+    .card p {
+      color: #596579;
+      margin-bottom: 18px;
+    }
 
     .tools {
       font-size: 14px;
@@ -155,7 +214,8 @@
       margin-bottom: 18px;
     }
 
-    .project-link, .credential-link {
+    .project-link,
+    .credential-link {
       display: inline-block;
       text-decoration: none;
       color: #174ea6;
@@ -164,10 +224,19 @@
       margin-top: 5px;
     }
 
-    .project-link:hover, .credential-link:hover { text-decoration: underline; }
+    .project-link:hover,
+    .credential-link:hover {
+      text-decoration: underline;
+    }
 
-    .inventory-preview { margin-top: 20px; }
-    .inventory-preview h4 { margin-bottom: 10px; color: #24324c; }
+    .inventory-preview {
+      margin-top: 20px;
+    }
+
+    .inventory-preview h4 {
+      margin-bottom: 10px;
+      color: #24324c;
+    }
 
     .inventory-preview img {
       width: 100%;
@@ -184,11 +253,30 @@
       max-width: 1000px;
     }
 
-    .timeline-item h3 { margin-bottom: 4px; color: #101a30; }
-    .timeline-item .date { color: #69758a; font-size: 14px; margin-bottom: 12px; }
-    .timeline-item ul { padding-left: 22px; margin-top: 10px; }
-    .timeline-item li { margin-bottom: 9px; color: #596579; }
-    .timeline-item p { color: #596579; }
+    .timeline-item h3 {
+      margin-bottom: 4px;
+      color: #101a30;
+    }
+
+    .timeline-item .date {
+      color: #69758a;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .timeline-item ul {
+      padding-left: 22px;
+      margin-top: 10px;
+    }
+
+    .timeline-item li {
+      margin-bottom: 9px;
+      color: #596579;
+    }
+
+    .timeline-item p {
+      color: #596579;
+    }
 
     .certification {
       background: white;
@@ -198,12 +286,29 @@
       max-width: 750px;
     }
 
-    .certification h3 { margin-bottom: 7px; }
-    .certification p { margin-bottom: 12px; color: #596579; }
+    .certification h3 {
+      margin-bottom: 7px;
+    }
 
-    .contact { background: #16213b; color: white; }
-    .contact h2 { color: white; }
-    .contact p { color: #d6dfef; margin-bottom: 20px; max-width: 750px; }
+    .certification p {
+      margin-bottom: 12px;
+      color: #596579;
+    }
+
+    .contact {
+      background: #16213b;
+      color: white;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact p {
+      color: #d6dfef;
+      margin-bottom: 20px;
+      max-width: 750px;
+    }
 
     footer {
       text-align: center;
@@ -221,22 +326,63 @@
         gap: 35px;
       }
 
-      .hero-content { max-width: 100%; }
-      .hero p { margin-left: auto; margin-right: auto; }
-      .hero-image img { width: 230px; height: 230px; }
+      .hero-content {
+        max-width: 100%;
+      }
+
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-image img {
+        width: 230px;
+        height: 230px;
+      }
     }
 
     @media (max-width: 750px) {
-      nav { display: block; }
-      nav div { margin-top: 10px; }
-      nav a { display: inline-block; margin: 5px 12px 5px 0; }
-      .hero h1 { font-size: 39px; }
-      .hero h2 { font-size: 23px; }
-      section { padding: 55px 7%; }
-      .hero { padding: 60px 7%; }
-      .hero-image img { width: 200px; height: 200px; }
-      .projects-grid { grid-template-columns: 1fr; }
-      .project-image { height: auto; }
+      nav {
+        display: block;
+      }
+
+      nav div {
+        margin-top: 10px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 12px 5px 0;
+      }
+
+      .hero h1 {
+        font-size: 39px;
+      }
+
+      .hero h2 {
+        font-size: 23px;
+      }
+
+      section {
+        padding: 55px 7%;
+      }
+
+      .hero {
+        padding: 60px 7%;
+      }
+
+      .hero-image img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-image {
+        height: auto;
+      }
     }
   </style>
 </head>
@@ -263,6 +409,7 @@
       <p class="intro">Hello, I'm</p>
       <h1>Pavan Kumar N</h1>
       <h2>Data Analyst | SQL • Python • Power BI • Excel</h2>
+
       <p>
         Data analytics professional with 3+ years of experience in operations,
         reporting, and coordination, complemented by Data Analytics training
@@ -271,15 +418,27 @@
       </p>
 
       <a class="btn" href="#projects">View My Projects</a>
+
       <a class="btn btn-outline"
-         href="Pavan_Kumar_N_Data_Analyst_Resume_Updated.pdf"
-         target="_blank" rel="noopener noreferrer">Resume</a>
+         href="Pavan_Kumar_N_Data_Analyst_Resume.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        Resume
+      </a>
+
       <a class="btn btn-outline"
          href="https://www.linkedin.com/in/pavan-kumar-n-3677b1238/"
-         target="_blank" rel="noopener noreferrer">LinkedIn</a>
+         target="_blank"
+         rel="noopener noreferrer">
+        LinkedIn
+      </a>
+
       <a class="btn btn-outline"
          href="https://github.com/pavankumarn136-pixel"
-         target="_blank" rel="noopener noreferrer">GitHub</a>
+         target="_blank"
+         rel="noopener noreferrer">
+        GitHub
+      </a>
     </div>
 
     <div class="hero-image">
@@ -291,7 +450,8 @@
   <section id="about">
     <h2>About Me</h2>
     <p class="section-intro">
-      A professional background combining operations experience with practical data analytics training and internship experience.
+      A professional background combining operations experience with practical
+      data analytics training and internship experience.
     </p>
 
     <div class="about">
@@ -333,7 +493,8 @@
   <section id="skills">
     <h2>Technical Skills</h2>
     <p class="section-intro">
-      Tools and analytical capabilities applied in my training, internship, and projects.
+      Tools and analytical capabilities applied in my training, internship,
+      and projects.
     </p>
 
     <div class="skills">
@@ -377,7 +538,8 @@
              alt="Fashion Retail Sales Overview Power BI Dashboard">
 
         <div class="card-content">
-          <h3>Fashion Retail Sales & Inventory Analytics</h3>
+          <h3>Fashion Retail Sales &amp; Inventory Analytics</h3>
+
           <p>
             An end-to-end retail analytics project using sales and inventory
             datasets. Prepared and analyzed data with Python and SQL, explored
@@ -392,11 +554,17 @@
 
           <a class="project-link"
              href="https://github.com/pavankumarn136-pixel/amazon-e-commerce-sales-inventory-analysis"
-             target="_blank" rel="noopener noreferrer">View Full Project</a>
+             target="_blank"
+             rel="noopener noreferrer">
+            View Full Project
+          </a>
 
           <a class="project-link"
              href="https://github.com/pavankumarn136-pixel/amazon-e-commerce-sales-inventory-analysis"
-             target="_blank" rel="noopener noreferrer">GitHub</a>
+             target="_blank"
+             rel="noopener noreferrer">
+            GitHub
+          </a>
 
           <div class="inventory-preview">
             <h4>Inventory Analysis Dashboard</h4>
@@ -414,6 +582,7 @@
 
         <div class="card-content">
           <h3>Customer Shopping Behavior Analysis</h3>
+
           <p>
             Completed as part of my 6-month Data Analyst internship at
             <strong>B Dreams Global Solutions</strong>. Analyzed 3,900 customer
@@ -430,18 +599,24 @@
 
           <a class="project-link"
              href="https://github.com/pavankumarn136-pixel/customer-shopping-behavior-analysis"
-             target="_blank" rel="noopener noreferrer">View Full Project</a>
+             target="_blank"
+             rel="noopener noreferrer">
+            View Full Project
+          </a>
 
           <a class="project-link"
              href="https://github.com/pavankumarn136-pixel/customer-shopping-behavior-analysis"
-             target="_blank" rel="noopener noreferrer">GitHub</a>
+             target="_blank"
+             rel="noopener noreferrer">
+            GitHub
+          </a>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
+  <!-- PROFESSIONAL EXPERIENCE -->
   <section id="experience">
     <h2>Professional Experience</h2>
     <p class="section-intro">
@@ -583,7 +758,7 @@
 
   <!-- EDUCATION -->
   <section id="education">
-    <h2>Education & Training</h2>
+    <h2>Education &amp; Training</h2>
     <p class="section-intro">
       Academic and professional learning supporting my business and analytical foundation.
     </p>
@@ -631,9 +806,11 @@
         Data Analytics workshop focused on Power BI for beginners,
         including an end-to-end project.
       </p>
+
       <a class="credential-link"
          href="https://verify.techtip24.com/profile?credId=69d28e51a0a1d70eaf5911e7"
-         target="_blank" rel="noopener noreferrer">
+         target="_blank"
+         rel="noopener noreferrer">
         Verify Credential
       </a>
     </div>
@@ -642,6 +819,7 @@
   <!-- CONTACT -->
   <section id="contact" class="contact">
     <h2>Let's Connect</h2>
+
     <p>
       I am exploring opportunities in Data Analytics, Business Intelligence,
       and MIS reporting. I welcome connections with recruiters, hiring
@@ -650,23 +828,38 @@
 
     <a class="btn"
        href="https://mail.google.com/mail/?view=cm&fs=1&to=Pavankumarn136@gmail.com"
-       target="_blank" rel="noopener noreferrer">Email Me</a>
+       target="_blank"
+       rel="noopener noreferrer">
+      Email Me
+    </a>
 
     <a class="btn"
-       href="Pavan_Kumar_N_Data_Analyst_Resume_Updated.pdf"
-       target="_blank" rel="noopener noreferrer">Resume</a>
+       href="Pavan_Kumar_N_Data_Analyst_Resume.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+      Resume
+    </a>
 
     <a class="btn"
        href="https://www.linkedin.com/in/pavan-kumar-n-3677b1238/"
-       target="_blank" rel="noopener noreferrer">LinkedIn</a>
+       target="_blank"
+       rel="noopener noreferrer">
+      LinkedIn
+    </a>
 
     <a class="btn"
        href="https://github.com/pavankumarn136-pixel"
-       target="_blank" rel="noopener noreferrer">GitHub</a>
+       target="_blank"
+       rel="noopener noreferrer">
+      GitHub
+    </a>
 
     <a class="btn"
        href="https://pavankumarn136-pixel.github.io/"
-       target="_blank" rel="noopener noreferrer">Portfolio</a>
+       target="_blank"
+       rel="noopener noreferrer">
+      Portfolio
+    </a>
   </section>
 
   <!-- FOOTER -->
